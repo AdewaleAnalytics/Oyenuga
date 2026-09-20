@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adewale Oyenuga | Data Analyst portfolio">
+<title>Adewale Oyenuga | Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#10243e;--blue:#1769aa;--sky:#eaf4fb;--ink:#18212b;--muted:#5d6975;--line:#dbe3ea;--white:#fff;--bg:#f7f9fb;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-weight:700;font-size:19px;color:var(--navy)}.links{display:flex;gap:28px;font-size:14px;font-weight:600}.links a:hover{color:var(--blue)}
+.hero{background:linear-gradient(135deg,#f7fbff 0%,#eaf4fb 100%);padding:92px 0 80px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:70px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}.hero h1{font-family:"Space Grotesk";font-size:clamp(44px,6vw,72px);line-height:1.03;margin:14px 0 22px;color:var(--navy);letter-spacing:-.04em}.hero h1 span{color:var(--blue)}.lead{font-size:19px;max-width:700px;color:#43515e}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;font-weight:700;font-size:14px;border:1px solid var(--navy)}.btn.primary{background:var(--navy);color:white}.btn.secondary{background:white;color:var(--navy)}
+.statbox{background:white;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 14px 40px rgba(16,36,62,.07)}.stat{padding:18px 0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.stat strong{font-family:"Space Grotesk";font-size:28px;color:var(--navy);display:block}.stat span{font-size:13px;color:var(--muted)}
+section{padding:82px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px}.section-head h2{font-family:"Space Grotesk";font-size:36px;color:var(--navy);margin:0;letter-spacing:-.03em}.section-head p{color:var(--muted);max-width:600px;margin:0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.card{background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden}.card-top{height:10px;background:var(--blue)}.card-body{padding:27px}.tag{display:inline-block;background:var(--sky);color:var(--blue);padding:5px 9px;border-radius:999px;font-size:12px;font-weight:700;margin:0 5px 8px 0}.card h3{font-family:"Space Grotesk";font-size:23px;color:var(--navy);margin:12px 0 9px}.card p{color:var(--muted);margin:0 0 18px}.result{background:#f7f9fb;border-left:3px solid var(--blue);padding:12px 14px;font-size:14px;margin-top:18px}.result b{color:var(--navy)}
+.about{background:white}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.about h2,.skills h2,.experience h2{font-family:"Space Grotesk";font-size:36px;color:var(--navy);margin-top:0}.about p{color:var(--muted)}.education{border-left:3px solid var(--blue);padding-left:20px;margin-top:26px}.education strong{display:block;color:var(--navy)}
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill{background:white;border:1px solid var(--line);padding:20px;border-radius:12px}.skill h3{margin:0 0 8px;color:var(--navy);font-size:16px}.skill p{margin:0;color:var(--muted);font-size:14px}
+.experience{background:white}.timeline{border-left:2px solid var(--line);padding-left:28px}.job{position:relative;margin-bottom:38px}.job:before{content:"";position:absolute;width:10px;height:10px;background:var(--blue);border-radius:50%;left:-34px;top:9px}.job h3{margin:0;color:var(--navy);font-size:20px}.job .meta{color:var(--blue);font-weight:700;font-size:14px}.job p{color:var(--muted);margin:8px 0}.job ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.contact{background:var(--navy);color:white}.contact h2{font-family:"Space Grotesk";font-size:40px;margin:0 0 12px}.contact p{color:#c8d5e1;max-width:650px}.contact .btn.primary{background:white;color:var(--navy);border-color:white}.contact .btn.secondary{background:transparent;color:white;border-color:#8295aa}
+footer{background:#0b1b2e;color:#9fb0c0;padding:25px 0;font-size:13px}.footerin{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.links{display:none}.hero-grid,.about-grid,.projects{grid-template-columns:1fr}.hero{padding:65px 0}.statbox{margin-top:10px}.section-head{display:block}.section-head p{margin-top:10px}.skill-grid{grid-template-columns:1fr}.footerin{display:block}.footerin div+div{margin-top:8px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#">AO.</a><div class="links"><a href="#projects">Projects</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+<div>
+<div class="eyebrow">Data Analyst · Bradford / UK</div>
+<h1>Turning data into <span>clear decisions.</span></h1>
+<p class="lead">I am Adewale Oyenuga, a data analyst with a background in statistics, public sector reporting, financial services and healthcare operations. I use SQL, Power BI, Excel and Python to turn complex data into useful analysis and clear dashboards.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View my projects</a><a class="btn secondary" href="#contact">Get in touch</a></div>
+</div>
+<div class="statbox">
+<div class="stat"><strong>MSc</strong><span>Big Data Science and Technology · University of Bradford</span></div>
+<div class="stat"><strong>SQL + Power BI</strong><span>Core tools for reporting, analysis and dashboards</span></div>
+<div class="stat"><strong>10 KPIs</strong><span>Built into a Bradford Council IT service dashboard</span></div>
+</div>
+</div></header>
+
+<section id="projects"><div class="wrap">
+<div class="section-head"><h2>Selected projects</h2><p>Projects that show how I approach data preparation, analysis, visualisation and business questions.</p></div>
+<div class="projects">
+<article class="card"><div class="card-top"></div><div class="card-body">
+<span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Random Forest</span>
+<h3>Agent Banking Compliance Risk Analysis</h3>
+<p>A synthetic analytics project based on agent banking operations in Nigeria. I created the data in Python, analysed it with SQL and built a Power BI dashboard to identify patterns linked to compliance risk.</p>
+<div class="result"><b>Focus:</b> risk indicators, agent performance, data quality, segmentation and dashboard reporting.</div>
+</div></article>
+
+<article class="card"><div class="card-top"></div><div class="card-body">
+<span class="tag">Power BI</span><span class="tag">API</span><span class="tag">KPIs</span>
+<h3>IT Service Management Dashboard</h3>
+<p>A Bradford Council project using Cherwell ITSM data and an API to create an operational dashboard. The work covered KPI definition, data preparation, reporting and stakeholder requirements.</p>
+<div class="result"><b>Result:</b> 10 operational KPIs covering service performance, including SLA attainment and availability.</div>
+</div></article>
+
+<article class="card"><div class="card-top"></div><div class="card-body">
+<span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Healthcare</span>
+<h3>Healthcare Operations Analysis</h3>
+<p>A portfolio project focused on imaging and urgent pathway operations using synthetic data. The aim is to show how waiting times, activity, capacity and pathway performance can be analysed safely without using patient identifiable data.</p>
+<div class="result"><b>Focus:</b> waiting time trends, activity by modality, pathway performance and management reporting.</div>
+</div></article>
+
+<article class="card"><div class="card-top"></div><div class="card-body">
+<span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span>
+<h3>Financial Inclusion & Agent Network Analysis</h3>
+<p>An analytical case study based on financial inclusion and agent banking. It examines network growth, transaction activity and geographic or operational patterns using synthetic or public data.</p>
+<div class="result"><b>Focus:</b> trend analysis, performance measures, geographic analysis and executive reporting.</div>
+</div></article>
+</div></div></section>
+
+<section id="about" class="about"><div class="wrap about-grid">
+<div><h2>About me</h2>
+<p>I have a BSc in Statistics from the University of Ibadan and an MSc in Big Data Science and Technology from the University of Bradford.</p>
+<p>My experience covers data analysis, operational reporting, financial services monitoring and healthcare administration. I enjoy working with messy data, finding useful patterns and presenting results in a way that people can understand and act on.</p>
+<p>I am particularly interested in analyst roles across healthcare, government, financial services and other organisations where good reporting and careful analysis matter.</p>
+<div class="education"><strong>MSc Big Data Science and Technology</strong>University of Bradford · Merit<br><br><strong>BSc Statistics</strong>University of Ibadan · Second Class Upper</div>
+</div>
+<div id="skills"><h2>Technical skills</h2><div class="skill-grid">
+<div class="skill"><h3>Data analysis</h3><p>SQL · Python · R · Excel · Statistics</p></div>
+<div class="skill"><h3>Business intelligence</h3><p>Power BI · DAX · Power Query · Looker Studio</p></div>
+<div class="skill"><h3>Data preparation</h3><p>ETL · Data validation · APIs · Data quality · Star schema</p></div>
+<div class="skill"><h3>Analytics</h3><p>Forecasting · Regression · Clustering · Hypothesis testing · Machine learning</p></div>
+</div></div>
+</div></section>
+
+<section id="experience" class="experience"><div class="wrap"><h2>Experience</h2><div class="timeline">
+<div class="job"><h3>Graduate Data Analyst / Graduate Assistant · Bradford Council</h3><div class="meta">2023</div><p>Worked with Cherwell ITSM and operational data to support reporting and dashboard development.</p><ul><li>Built a Power BI dashboard covering 10 service KPIs.</li><li>Worked with API data and prepared information for reporting.</li><li>Supported monitoring of SLA attainment and service availability.</li></ul></div>
+<div class="job"><h3>Monitoring & Intelligence Specialist · SANEF</h3><div class="meta">2019 to 2022 · Lagos, Nigeria</div><p>Analysed agent banking and financial inclusion data and produced reporting for management and regulatory stakeholders.</p><ul><li>Supported reporting on the growth of the agent banking network.</li><li>Worked with large operational datasets and performance measures.</li><li>Produced analysis for financial inclusion and monitoring activities.</li></ul></div>
+<div class="job"><h3>Patient Liaison Officer · UCLH</h3><div class="meta">2024 to 2026 · London</div><p>Worked within imaging and urgent referral pathways, coordinating bookings and supporting accurate operational information across CT, MRI, ultrasound and other services.</p><ul><li>Worked with EPIC and urgent pathway processes.</li><li>Managed time sensitive bookings and patient pathway information.</li><li>Developed practical understanding of healthcare operational data.</li></ul></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><h2>Let's talk about data.</h2><p>I am open to Data Analyst, BI Analyst, Reporting Analyst, MI Analyst and related opportunities across the UK.</p><div class="buttons">
+<a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+<a class="btn secondary" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+<a class="btn secondary" href="https://github.com/" target="_blank">GitHub</a>
+</div></div></section>
+<footer><div class="wrap footerin"><div>© 2026 Adewale Oyenuga</div><div>Data Analyst · SQL · Power BI · Python</div></div></footer>
+</body></html>
